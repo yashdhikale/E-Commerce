@@ -1,0 +1,118 @@
+
+
+.App {
+  text-align: center;
+}
+
+.app-header {
+  /* background-color: #282c34; */
+  font-family: 'Brush Script MT', cursive;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: calc(10px + 2vmin);
+  color: rgb(11, 11, 11);
+  position: relative; 
+}
+
+.app-header h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.auth-buttons {
+  position: absolute;
+  right: 20px; 
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  /* color: rgb(11, 11, 11); */
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.product-card, .cart-item, .checkout-item {
+  border: 1px solid #474646;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex: 1 1 calc(33.333% - 20px); 
+  box-sizing: border-box; 
+  text-align: center;
+}
+
+.product-card img, .cart-item img, .checkout-item img {
+  max-width: 100%;
+  max-height: 150px;
+  display: block;
+  margin: 0 auto 10px; 
+}
+
+button {
+  padding: 10px 20px; 
+  cursor: pointer;
+  border: none; 
+  border-radius: 8px;
+  background-color: #878b8e; 
+  color: white; 
+  font-size: 16px; 
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+input {
+  padding: 10px 7px; 
+  cursor: pointer;
+  border: none; 
+  border-radius: 8px; 
+  background-color: #8b8989; /* Button background color */
+  color: white; /* Button text color */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Adds space to the right of the input */
+  margin-bottom: 10px; /* Adds space to the bottom of the input */
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navigation button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #878b8e;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease; 
+}
+
+.navigation button:nth-child(2) {
+  margin-left: 20px; 
+}
+
+.navigation button:hover {
+  background-color: #6b6f72;
+}
+
+
+.checkout .checkout-button {
+  margin-top: 20px;
+}
